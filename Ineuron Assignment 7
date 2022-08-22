@@ -1,0 +1,51 @@
+Q1.   Write a python script to dispaly the number of days in a given month Number.
+Ans.   mon=int(input("Enter a month Number: "))
+       match mon:
+           case 1:
+              print("January 31 Days")
+           case 2:
+              print("Feburary 28 Days")
+           case 3:
+              print("March 31 Days")
+           case 4:
+              print("April 30 Days")
+           case 5:
+              print("May 31 Days")
+           case 6:
+              print("June 30 Days")
+           case 7:
+              print("July 31 Days")
+           case 8:
+              print("August 31 Days")
+           case 9:
+              print("September 30 Days")
+           case 10:
+              print("October 31 Days")
+           case 11:
+              print("November 30 Days")
+           case 12:
+              print("December 31 Days")
+Q2.   Write a Menu driven program to following operation-Addition,Sub.,Mul.,Div.
+Ans.   print("\t1.Addition")
+       print("\t2.Substraction")
+       print("\t3.Multiplication")
+       print("\t4.Division")
+       a=int(input("\t Select Your Choice: "))
+       match a:
+           case 1:
+               b=eval(input("Enter a number: "))
+               c=eval(input("Enter second number: "))
+               print(a+b)
+           case 2:
+               d=eval(input("Enter a number: "))
+               e=eval(input("Enter second number: "))
+               print(d-e)
+           case 3:
+               f=eval(input("Enter a number: "))
+               g=eval(input("Enter second number: "))
+               print(f*g)
+           case 4:
+              a=eval(input("Enter a number: "))
+              d=eval(input("Enter second number: "))
+              print(a/d)
+              
