@@ -25,6 +25,8 @@ Ans.   mon=int(input("Enter a month Number: "))
               print("November 30 Days")
            case 12:
               print("December 31 Days")
+           case _:
+              print("Invalid Month Number)
 Q2.   Write a Menu driven program to following operation-Addition,Sub.,Mul.,Div.
 Ans.   print("\t1.Addition")
        print("\t2.Substraction")
@@ -48,4 +50,127 @@ Ans.   print("\t1.Addition")
               a=eval(input("Enter a number: "))
               d=eval(input("Enter second number: "))
               print(a/d)
-              
+           case _:
+              print("Invalid Choice!")
+Q3.   Write a menu driven program with the following option
+       (a) Check wether a given set of three numbers are isoscales triangle or not.
+       (b) Check wether a given set of three numbers are right angled triangled or not.
+       (c) Check wether a given set of three numbers are equilateral triangle or not.
+       (d) Exit.
+Ans.     (1) Check wether a given set of three numbers are isoscales triangle or not.
+         (2) Check wether a given set of three numbers are right angled triangled or not.
+         (3) Check wether a given set of three numbers are equilateral triangle or not.
+         (4) Exit.    
+         a=int("input("Select Your Choice: "))
+         match a:
+             case 1:
+                a=int(input("Enter first side of triangle: "))
+                b=int(input("Enetr second side of triangle: "))
+                c=int(input("Enter Third side of triangle: "))
+                if(a and b==c):
+                   print("Yes it's an Isoscales Triangle:)
+                else:
+                   print("No! It'sn't Isoscales Triangle:)
+             case 2:
+                a=int(input("Enter first side of triangle: "))
+                b=int(input("Enetr second side of triangle: "))
+                c=int(input("Enter Third side of triangle: "))
+                if(a==90 and b+c==90):
+                   print("Yes it's an Right angled Triangle:)
+                else:
+                   print("No! It'sn't Right angled Triangle:)
+              case 3:
+                a=int(input("Enter first side of triangle: "))
+                b=int(input("Enetr second side of triangle: "))
+                c=int(input("Enter Third side of triangle: "))
+                if(a+b+c==180):
+                   print("Yes it's an equilateral Triangle:)
+                else:
+                   print("No! It'sn't equilateral Triangle:)
+              case 4:
+                 print("Exit!")
+              case _:
+                 print("Invalid Choice!")
+Q4.    Write a python program which take user's age as an inut and display the category of person.
+Ans.    age=int(input("Enter user's age: "))
+        match age:
+           case 10:
+              if(age<=10):
+                print("Kid!")
+           case 20:
+              if(age<=20):
+                print("Teen!")
+           case 30:
+              if(age<=30):
+                print("Young!")
+           case 40:
+              if(age>=40 and age<=60):
+                print("Experienced!")
+           case 50:
+              if(age>=60 and age<=80)
+                print("Seniour Citizen!")
+           case _:
+              print("Invalid Choice!")
+Q5.    Write a program which take a number from user print Saurabh shukla if even,print Preetek Jain if number is negative odd,print Aditya Chaudhari if number is Positive odd number.
+Ans.    a=int(input("Enter a number: "))
+        match a:        #or if(a%2==0):
+            case 20:
+               print("\"Saurabh Shukla\" Founder and CEO of MySirG.com")
+            case -35:   # elif(a%2 !=0):
+               print("\"Prateek Jain\" Seniour Precident of Ineuron Tech.")
+            case 45:    # elif(a%2 !=0):
+               print("\"Aditya Chaudhari\" Educator of Ineuron Tech.")
+            case _:     # else:
+               print("\"Rajeev Kumar\"  Google S/W Eng.")
+Q6.    Write a python program to check wether a given string is multiword or single word string.
+Ans.    print("1. Check multiword string:")
+        print("2. Check single word string:")
+        a=int(input("Select Your Choice:"))
+        match a:
+           case 1:
+              st=str(input("enter string: "))
+              if(st>'1'):
+                 print("Multiword String!")
+             else:
+                 print("Not Multiword String!")
+           case 2:
+               st=str(input("enter string: "))
+               if(st=='1'):
+                  print("Single word String!")
+               else:
+                  print("Not a Single Word String!")
+           case _:
+              print("Invalid Choice!")
+Q7.    Write a python program to check wether a given number is Positive,Negative or Zero Using match case statement.
+Ans.    print("1.Check a given number is positive negative or zero"))
+        a=int(input("Pess Key 1"))
+        match a:
+           case 1:
+              n=eval(input("enter a number: "))
+              if(n>0):
+                 print("Positive!")
+              elif(n<0):
+                 print("Negative!")
+              elif(n==0)
+                 print("Zero!")
+              else:
+                 print("Not a number!")
+            case _:
+               print("Invalid Choice~")
+Q8.                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           case 40:
+              print("
