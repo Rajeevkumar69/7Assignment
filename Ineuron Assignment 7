@@ -196,7 +196,19 @@ Ans.
       a=int(input("Select your choice: "))
       match a:
          case 1:
-            
+           print("Monday,I Like Yello Color")
+         case 2:
+           print("Tuesday,I Like Blue Color")
+         case 3:
+           print("Wednasday,I Like Orange Color")
+         case 4:
+           print("Thursday,I Like White Color")
+         case 5:
+           print("Friday,I Like Black Color")
+         case 6:
+           print("Saturday,I Like Red Color")
+         case 7:
+           print("Sunday,I Like a% Color")
 
 
 
