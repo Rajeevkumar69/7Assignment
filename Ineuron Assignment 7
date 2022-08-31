@@ -123,24 +123,12 @@ Ans.    a=int(input("Enter a number: "))
             case _:     # else:
                print("\"Rajeev Kumar\"  Google S/W Eng.")
 Q6.    Write a python program to check wether a given string is multiword or single word string.
-Ans.    print("1. Check multiword string:")
-        print("2. Check single word string:")
-        a=int(input("Select Your Choice:"))
-        match a:
-           case 1:
-              st=str(input("enter string: "))
-              if(st>'1'):
-                 print("Multiword String!")
-             else:
-                 print("Not Multiword String!")
-           case 2:
-               st=str(input("enter string: "))
-               if(st=='1'):
-                  print("Single word String!")
-               else:
-                  print("Not a Single Word String!")
-           case _:
-              print("Invalid Choice!")
+Ans.    s=input("Enter a string: ")
+        match s:
+           case s if ' ' in s:
+                 print("Multiword String")
+           case s if ' ' not in s:
+                 print("SingleWord String")
 Q7.    Write a python program to check wether a given number is Positive,Negative or Zero Using match case statement.
 Ans.    print("1.Check a given number is positive negative or zero"))
         a=int(input("Pess Key 1"))
@@ -158,7 +146,15 @@ Ans.    print("1.Check a given number is positive negative or zero"))
             case _:
                  print("Invalid Choice~")
 Q8.    Write a python script to check wether two given string are identical,first string comes before the second in dictonary order or first string comes after the second string in dictonary order.
-Ans.    
+Ans.    s1=input("Enter First String: ")
+        s2=input("Enter Second String: ")
+        match(s1,s2):
+            case (s1,s2) if s1==s2:
+                  print("Identical String" )
+            case (s1,s2) if s1>s2:
+                  print("{} comes after {}".format(s1,s2))
+            case (s1,s2) if s1<s2:
+                  print("{} comes before the {}".format(s2,s1))      
 
 Q9.    Write a python script to check wether a given year is 
          (a) Non Century leap Year
@@ -178,49 +174,27 @@ Ans.    year=int(input("Enter the century Year: "))
 Q10.   Write a python program to display day name on the basis of user liking a color,Ask user for his favourate color.
         User can answer in a sentence like"I Like Red Color". Assuming all color name entered by the user in lowercase,
         Use match case to display day name associated with the color.
-        a. Yello-Monday
-        b. Blue-Tuesday
-        c. Orange-Wednesday
-        d. White-Thursday
-        e. Black-friday
-        f. Red-Saturday
-        g. All Others Color-Sunday
-Ans.   
-      print("1. Yello")
-      print("2. Blue")
-      print("3. Orange")
-      print("4. White")
-      print("5. Black")
-      print("6. Red")
-      print("7. color")
-      a=int(input("Select your choice: "))
-      match a:
-         case 1:
-           print("Monday,I Like Yello Color")
-         case 2:
-           print("Tuesday,I Like Blue Color")
-         case 3:
-           print("Wednasday,I Like Orange Color")
-         case 4:
-           print("Thursday,I Like White Color")
-         case 5:
-           print("Friday,I Like Black Color")
-         case 6:
-           print("Saturday,I Like Red Color")
-         case 7:
-           print("Sunday,I Like a% Color")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
+        
+Ans.    s1=input("What Is Your favourate Colour: ")
+        l1=["yello","blue","red","orange","white","black"]
+        for colour in l1:
+              if colour in s1:
+                     c=colour
+                     break
+               else:
+                    c="other"
+                match c:
+                     case "yello":
+                       print("Monday")
+                     case "red":
+                       print("Tuesday")
+                     case "orange":
+                       print("Wednesday")
+                     case "white":
+                       print("Thursday")
+                     case "black"
+                       print("Friday")
+                     case "blue":
+                       print("Saturday")
+                       
+                       
